@@ -34,6 +34,7 @@ az webapp deploy \
     --src-path dbfinal.zip
 
 SCM_DO_BUILD_DURING_DEPLOYMENT set to true
+
 https://stackoverflow.com/questions/69774252/modulenotfounderror-no-module-named-pandas-in-application-service-azure-with
 
 github:
