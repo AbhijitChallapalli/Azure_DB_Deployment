@@ -1,0 +1,43 @@
+
+
+Download ODBC:
+https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver17
+
+Test Connection:
+Test-NetConnection dbdemo-server.database.windows.net -Port 1433
+
+Create table:
+CREATE TABLE Earthquakes (
+    id NVARCHAR(50) PRIMARY KEY,
+    time DATETIME,
+    latitude FLOAT,
+    longitude FLOAT,
+    depth FLOAT,
+    mag FLOAT,
+    place NVARCHAR(255)
+);
+
+
+Test:
+SELECT TOP 10 * FROM Earthquakes;
+
+SQL Server: container for the database which manages the authentication, firewall rules and endpoints.
+server name: db-server
+admin: abhi
+pswd: Testdbdemo$
+
+
+Azure:
+az webapp deploy \
+    --resource-group demotest \
+    --name dbdemoapp \
+    --src-path dbfinal.zip
+
+SCM_DO_BUILD_DURING_DEPLOYMENT set to true
+https://stackoverflow.com/questions/69774252/modulenotfounderror-no-module-named-pandas-in-application-service-azure-with
+
+github:
+
+git init
+git add path
+git commit -m "Initial Commit"
