@@ -44,3 +44,13 @@ git add path
 git commit -m "Initial Commit"
 
 This is added new
+
+For caching using redis:
+
+pip install redis
+
+Fetch the redis host name and the secret key and add them to env variable
+
+update the html with time functionalities
+
+build and deploy
